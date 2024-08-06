@@ -1,14 +1,110 @@
-* {
+body,
+body * {
+  font-family: "Roboto", sans-serif;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-body { 
+body {
   margin: unset;
   min-height: 100vh;
   min-width: 100vw;
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.jst-center {
+  justify-content: center;
+}
+.jst-end {
+  justify-content: flex-end;
+}
+
+.al-center {
+  align-items: center;
+}
+.al-end {
+  align-items: flex-end;
+}
+
+/* small padding */
+.pd,
+.pdv,
+.pdl {
+  padding-left: 0.2em;
+}
+
+.pd,
+.pdv,
+.pdr {
+  padding-right: 0.2em;
+}
+
+.pd,
+.pdh,
+.pdt {
+  padding-top: 0.2em;
+}
+
+.pd,
+.pdh,
+.pdb {
+  padding-bottom: 0.2em;
+}
+
+/* medium padding */
+.pd-md,
+.pdv-md,
+.pdl-md {
+  padding-left: 0.6em;
+}
+
+.pd-md,
+.pdv-md,
+.pdr-md {
+  padding-right: 0.6em;
+}
+
+.pd-md,
+.pdh-md,
+.pdt-md {
+  padding-top: 0.6em;
+}
+
+.pd-md,
+.pdh-md,
+.pdb-md {
+  padding-bottom: 0.6em;
+}
+
+/* big padding */
+.pd-bg,
+.pdv-bg,
+.pdl-bg {
+  padding-left: 1em;
+}
+
+.pd-bg,
+.pdv-bg,
+.pdr-bg {
+  padding-right: 1em;
+}
+
+.pd-bg,
+.pdh-bg,
+.pdt-bg {
+  padding-top: 1em;
+}
+
+.pd-bg,
+.pdh-bg,
+.pdb-bg {
+  padding-bottom: 1em;
 }

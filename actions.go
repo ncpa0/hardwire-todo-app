@@ -31,4 +31,10 @@ func registerActions() {
 		tasks.ToggleTask(id)
 		return nil
 	})
+
+	hw.DeleteAction("remove-task", func(body *ToggleTodoTaskData, ctx *hw.ActionContext) error {
+		id := body.ID
+		tasks.RemoveTask(id)
+		return nil
+	})
 }

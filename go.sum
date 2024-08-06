@@ -23,6 +23,14 @@ github.com/ncpa0/hardwire v0.0.0-20240806105805-36180276b77d h1:KIxxkfvbxi0EkDPr
 github.com/ncpa0/hardwire v0.0.0-20240806105805-36180276b77d/go.mod h1:bPr03wL/XtkyejzQn8JMrrevqt8jguJQg1CIjt3qKQU=
 github.com/ncpa0/hardwire v0.0.0-20240806122347-768dcccd8dc4 h1:E7bSOesJGPImE8dP6TVqjPB924i8m7qWzyWzLT0aJI4=
 github.com/ncpa0/hardwire v0.0.0-20240806122347-768dcccd8dc4/go.mod h1:bPr03wL/XtkyejzQn8JMrrevqt8jguJQg1CIjt3qKQU=
+github.com/ncpa0/hardwire v0.0.0-20240806180244-1698cdd8f5b7 h1:cFgpU7OenmsD5017bbM8KGvvBZJ4wiyw4PowwzsgiHI=
+github.com/ncpa0/hardwire v0.0.0-20240806180244-1698cdd8f5b7/go.mod h1:bPr03wL/XtkyejzQn8JMrrevqt8jguJQg1CIjt3qKQU=
+github.com/ncpa0/hardwire v0.0.0-20240806181936-18354a50d859 h1:pwdvATDiAS2hM8Nggsf04lRvlxmyYEcMOTzqFTvPeYc=
+github.com/ncpa0/hardwire v0.0.0-20240806181936-18354a50d859/go.mod h1:bPr03wL/XtkyejzQn8JMrrevqt8jguJQg1CIjt3qKQU=
+github.com/ncpa0/hardwire v0.0.0-20240806182300-1ee4ed698d28 h1:EGs48ZVwLtmzFQgsz3KUqHoSJZ3DCzZg1cYuY4lU/rM=
+github.com/ncpa0/hardwire v0.0.0-20240806182300-1ee4ed698d28/go.mod h1:bPr03wL/XtkyejzQn8JMrrevqt8jguJQg1CIjt3qKQU=
+github.com/ncpa0/hardwire v0.0.0-20240806191558-cb4581df21c8 h1:MbawP9+lYQd7DMYpAdLk5c762V3kdWuhEheIHwOiAhc=
+github.com/ncpa0/hardwire v0.0.0-20240806191558-cb4581df21c8/go.mod h1:bPr03wL/XtkyejzQn8JMrrevqt8jguJQg1CIjt3qKQU=
 github.com/ncpa0cpl/convenient-structures v0.0.0-20231127113943-08d3c9127a1a h1:QWloo3Ow8y3vyAoa5mEpOdtp+SHfeGnpt3211vQcL0E=
 github.com/ncpa0cpl/convenient-structures v0.0.0-20231127113943-08d3c9127a1a/go.mod h1:V0cw/tcR5CylWFP1TKRpotLHtCANzD0cPWpvt3m8woU=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

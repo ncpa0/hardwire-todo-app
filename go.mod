@@ -4,7 +4,7 @@ go 1.22.5
 
 require (
 	github.com/labstack/echo/v4 v4.12.0
-	github.com/ncpa0/hardwire v0.0.0-20240806122347-768dcccd8dc4
+	github.com/ncpa0/hardwire v0.0.0-20240806191558-cb4581df21c8
 )
 
 require (
