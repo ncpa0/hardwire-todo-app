@@ -1,0 +1,14 @@
+* {
+  min-width: 0;
+}
+
+body { 
+  margin: unset;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
