@@ -35,6 +35,12 @@ func registerActions() {
 	hw.DeleteAction("remove-task", func(body *ToggleTodoTaskData, ctx *hw.ActionContext) error {
 		id := body.ID
 		tasks.RemoveTask(id)
+		if tasks.Count() == 0 {
+			// usually remove will onle delete the item from the list,
+			// forcing re-render of the whole list if the count reaches zero,
+			// so that the "empty list" message is put in
+			ctx.UpdateIslands("todo-list")
+		}
 		return nil
 	})
 }

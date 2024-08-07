@@ -21,6 +21,10 @@ var tasks = &TodoController{
 	Tasks: []*TodoTask{},
 }
 
+func (c *TodoController) Count() int {
+	return len(c.Tasks)
+}
+
 func (c *TodoController) AddTask(task *TodoTask) {
 	c.mx.Lock()
 	defer c.mx.Unlock()
