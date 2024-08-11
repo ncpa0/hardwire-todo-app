@@ -74,6 +74,11 @@ input {
   }
 }
 
+.todo-count-view {
+  display: flex;
+  flex-direction: row;
+}
+
 #todo-list {
   align-items: center;
 }

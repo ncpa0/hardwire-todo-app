@@ -4,6 +4,7 @@
   "main": "index.tsx",
   "dependencies": {
     "hardwire-html-generator": "0.0.1-beta.8",
+    "htmx.ext...chunked-transfer": "^1.0.4",
     "lightningcss": "^1.26.0"
   }
 }

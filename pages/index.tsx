@@ -10,6 +10,22 @@ function EmptyListMessage() {
   return <h4 class="empty-list-message">List is empty</h4>;
 }
 
+const TodoCount = $island<TodoTask[]>(
+  {
+    require: "todo",
+    id: "todo-count",
+    fallback: <Spinner dark />,
+  },
+  (props, tasks) => {
+    return (
+      <div class="todo-count-view">
+        <p>Tasks: </p>
+        <p>{tasks.length}</p>
+      </div>
+    );
+  },
+);
+
 const TodoList = $islandList<TodoTask[]>(
   {
     require: "todo",
@@ -32,9 +48,9 @@ const TodoList = $islandList<TodoTask[]>(
 );
 
 const TodoForm = $action({
+  resource: "todo",
   method: "POST",
-  action: "add-task",
-  islands: [TodoList],
+  action: "add",
 });
 
 export default function App() {
@@ -42,6 +58,7 @@ export default function App() {
     <Html
       nomorph
       headContent={<Style dirname={__dirname} path="./style.css" />}
+      headProps={{ htmxVersion: "1.9.12" }}
     >
       <body class="al-center">
         <div id="main">
@@ -66,6 +83,7 @@ export default function App() {
                 </div>
                 <span class="separator" />
                 <div class="pdt-bg">
+                  <TodoCount />
                   <h3>Things to do:</h3>
                   <TodoList />
                 </div>
@@ -79,15 +97,15 @@ export default function App() {
 }
 
 const ToggleTodoAction = $action({
-  method: "POST",
-  action: "toggle-task",
-  islands: [TodoList],
+  resource: "todo",
+  method: "PATCH",
+  action: "toggle",
 });
 
 const RemoveTodoAction = $action({
+  resource: "todo",
   method: "DELETE",
-  action: "remove-task",
-  islands: [TodoList],
+  action: "remove",
 });
 
 function TodoEntryElement(props: { task: StructProxy<TodoTask> }) {

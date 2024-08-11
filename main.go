@@ -17,14 +17,13 @@ func main() {
 	})
 
 	registerResources()
-	registerActions()
 
 	server := echo.New()
 
 	server.GET("/", func(ctx echo.Context) error {
 		return ctx.Redirect(303, "/todos")
 	})
-	err := hw.Start(server)
+	err := hw.UseWith(server)
 
 	if err != nil {
 		server.Logger.Fatal(err)
