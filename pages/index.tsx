@@ -23,7 +23,7 @@ const TodoCount = $island<TodoTask[]>(
         <p>{tasks.length}</p>
       </div>
     );
-  },
+  }
 );
 
 const TodoList = $islandList<TodoTask[]>(
@@ -44,7 +44,7 @@ const TodoList = $islandList<TodoTask[]>(
         else={() => <>{props.children}</>}
       />
     );
-  },
+  }
 );
 
 const TodoForm = $action({
@@ -104,7 +104,7 @@ const ToggleTodoAction = $action({
 
 const RemoveTodoAction = $action({
   resource: "todo",
-  method: "DELETE",
+  method: "POST",
   action: "remove",
 });
 
